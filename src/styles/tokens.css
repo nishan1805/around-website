@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-400.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-500.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-600.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/assets/fonts/plus-jakarta-sans-600.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+
+  --primary-50: #e6efff;
+  --primary-100: #b0cfff;
+  --primary-200: #8ab7ff;
+  --primary-300: #5596ff;
+  --primary-400: #3482ff;
+  --primary-500: #0163ff;
+  --primary-600: #015ae8;
+  --surface-primary: #ffffff;
+  --grey-300: #d6d7db;
+  --grey-400: #a6a7ae;
+  --grey-500: #717680;
+  --grey-600: #535861;
+  --grey-700: #414650;
+  --grey-800: #252c37;
+  --grey-900: #181e27;
+  --secondary-600: #e86f18;
+  --features-500: #8338ec;
+  --info-700: #047c97;
+  --success-700: #239148;
+  --page-dark: #0b101a;
+  --mobile-black: #070707;
+
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-64: 64px;
+
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --radius-2xl: 32px;
+  --radius-3xl: 128px;
+
+  --label-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  --pin-glow: 0 4px 10px rgba(1, 99, 255, 0.65);
+  color: var(--grey-800);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
