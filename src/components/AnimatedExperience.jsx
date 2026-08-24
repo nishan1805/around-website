@@ -326,32 +326,34 @@ function DesktopAnimatedScene() {
           <img src={assets.finalCity} alt="" decoding="async" fetchPriority="low" />
           <span />
         </div>
-        <LandingHeader />
-        <div className="desktop-hero__copy animated-scene__hero-copy">
-          <h1>Your city,<br />like never before</h1>
-          <p>
-            Real places, real people, real moments.<br />
-            Everything happening <strong>around</strong> you.
-          </p>
+        <div className="animated-scene__desktop-stage">
+          <LandingHeader />
+          <div className="desktop-hero__copy animated-scene__hero-copy">
+            <h1>Your city,<br />like never before</h1>
+            <p>
+              Real places, real people, real moments.<br />
+              Everything happening <strong>around</strong> you.
+            </p>
+          </div>
+          <div className="animated-city-reveal animated-city-reveal--desktop">
+            <MorphingDesktopDevice />
+          </div>
+          <DesktopHeroClouds />
+          <DesktopCityClouds />
+          <DesktopCityClouds zoom />
+          <div className="scroll-cue animated-scene__scroll-cue" aria-hidden="true">
+            <span>Scroll to explore</span>
+            <span className="scroll-cue__mouse"><img src={assets.scrollDot} alt="" /></span>
+          </div>
+          <div className="animated-device-intro">
+            <h2>Your city. One app.</h2>
+            <p>One place to discover everything happening around you.</p>
+          </div>
+          <div className="animated-final-cta" data-node-id="1200:105453">
+            <LaunchCTA />
+          </div>
+          <WaitlistForm className="desktop-state__form animated-scene__form" />
         </div>
-        <div className="animated-city-reveal animated-city-reveal--desktop">
-          <MorphingDesktopDevice />
-        </div>
-        <DesktopHeroClouds />
-        <DesktopCityClouds />
-        <DesktopCityClouds zoom />
-        <div className="scroll-cue animated-scene__scroll-cue" aria-hidden="true">
-          <span>Scroll to explore</span>
-          <span className="scroll-cue__mouse"><img src={assets.scrollDot} alt="" /></span>
-        </div>
-        <div className="animated-device-intro">
-          <h2>Your city. One app.</h2>
-          <p>One place to discover everything happening around you.</p>
-        </div>
-        <div className="animated-final-cta" data-node-id="1200:105453">
-          <LaunchCTA />
-        </div>
-        <WaitlistForm className="desktop-state__form animated-scene__form" />
       </section>
     </div>
   )
