@@ -883,6 +883,7 @@
 .location-label {
   position: absolute;
   z-index: 9;
+  isolation: isolate;
   display: flex;
   height: 3.0556cqw;
   align-items: center;
@@ -891,7 +892,7 @@
   border-radius: 0.5556cqw;
   color: var(--grey-800);
   background: var(--surface-primary);
-  box-shadow: var(--label-shadow);
+  filter: drop-shadow(var(--label-shadow));
   font-size: 0.9722cqw;
   font-weight: 500;
   line-height: 1.3889cqw;
@@ -905,7 +906,8 @@
 
 .location-label__arrow {
   position: absolute;
-  top: calc(100% - 1px);
+  z-index: -1;
+  top: calc(100% - 4px);
   left: 50%;
   width: 1.3889cqw;
   height: 0.9722cqw;
