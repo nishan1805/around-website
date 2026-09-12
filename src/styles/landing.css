@@ -822,14 +822,14 @@
 }
 
 .location-pin__hole-outer {
-  top: 13.95%;
+  top: calc(13.95% + 3px);
   left: 28.95%;
   width: 42.09%;
   aspect-ratio: 1;
 }
 
 .location-pin__hole-inner {
-  top: 19.32%;
+  top: calc(19.32% + 3px);
   left: 36.6%;
   width: 26.78%;
   aspect-ratio: 1;
